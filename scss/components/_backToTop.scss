@@ -1,0 +1,23 @@
+// Back To Top
+#backToTop {
+  @include iconBox;
+  font-size: 1.2em;
+  color: clr(light, outline);
+  background-color: clr(primary, main);
+  box-shadow: 0 0 10px rgba(clr(black, main), 0.2);
+  opacity: 0;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9;
+
+  &:hover {
+    color: clr(light, main);
+    background-color: clr(primary, hover);
+  }
+
+  &.show {
+    opacity: 1;
+  }
+}

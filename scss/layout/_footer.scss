@@ -1,0 +1,125 @@
+// Footer
+.mainFooter {
+  padding-top: 30px;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+
+  .wave {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    animation: moveImg 10s linear infinite;
+    background-image: url(../images/pattern/wave2.png);
+    background-size: contain;
+    background-repeat: repeat-x;
+    height: 30px;
+
+    &:before,
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      background-image: url(../images/pattern/wave2.png);
+      background-size: contain;
+      background-repeat: repeat-x;
+      opacity: 0.5;
+    }
+
+    &:before {
+      animation: moveImgReverse 10s linear infinite;
+    }
+
+    &:after {
+      animation: moveImg 20s linear infinite;
+    }
+  }
+
+  .footerTop {
+    padding: 100px 0 50px;
+    background-color: clr(secondary, hover);
+
+    @include lg {
+      padding: 60px 0 20px;
+    }
+
+    .titleFooter {
+      margin-bottom: 24px;
+
+      h5 {
+        color: clr(light, outline);
+        display: inline-block;
+        text-transform: capitalize;
+        font-size: 16px;
+        font-style: italic;
+        margin-bottom: 0;
+        padding-bottom: 5px;
+        border-bottom: 1px solid clr(light, outline);
+      }
+    }
+
+    .contactFooter {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .contactItem {
+        padding-left: 10px;
+        border-left: 2px solid clr(light, outline);
+
+        h6 {
+          font-size: 14px;
+          font-weight: 400;
+          color: clr(light, outline);
+          margin-bottom: 0;
+          display: inline-flex;
+          gap: 10px;
+
+          em {
+            position: relative;
+            top: 3px;
+          }
+
+          a {
+            display: block;
+            color: clr(light, main);
+
+            &:hover {
+              color: clr(black, main);
+            }
+          }
+        }
+      }
+    }
+
+    .socialLink {
+      @include social;
+    }
+
+    .linkFooter {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+        a {
+          color: clr(light, main);
+
+          &:hover {
+            color: clr(black, main);
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 24px 0;
+    text-align: center;
+    background-color: clr(secondary, hover);
+    border-top: 1px solid clr(black, outline);
+    color: clr(light, outline);
+  }
+}

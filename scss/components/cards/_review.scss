@@ -1,0 +1,19 @@
+// One
+.reviewCardOne {
+  .info {
+    margin-top: 32px;
+
+    h6 {
+      margin-bottom: 0;
+      color: clr(primary, main);
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: clr(secondary, mian);
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+// Btn
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  white-space: nowrap;
+  box-shadow: none;
+  outline: none;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &Primary {
+    color: clr(light, outline) !important;
+    background-color: clr(primary, main) !important;
+    border-color: clr(primary, main) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(primary, hover) !important;
+      border-color: clr(primary, hover) !important;
+    }
+  }
+
+  &Secondary {
+    color: clr(light, outline) !important;
+    background-color: clr(secondary, main) !important;
+    border-color: clr(secondary, main) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(secondary, hover) !important;
+      border-color: clr(secondary, hover) !important;
+    }
+  }
+
+  &White {
+    color: clr(primary, main) !important;
+    background-color: clr(light, outline) !important;
+    border-color: clr(light, outline) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(light, outline) !important;
+      background-color: clr(primary, hover) !important;
+      border-color: clr(primary, main) !important;
+    }
+  }
+
+  &GreyBorder {
+    color: clr(black, main) !important;
+    background-color: transparent !important;
+    border-color: clr(black, outline) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: clr(primary, main) !important;
+      background-color: clr(light, outline) !important;
+      border-color: clr(primary, main) !important;
+    }
+  }
+}
+
+// Btn Set
+.btnSet {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 15px;
+}

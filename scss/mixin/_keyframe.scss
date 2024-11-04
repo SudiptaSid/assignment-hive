@@ -1,0 +1,82 @@
+// transition
+:root {
+  --transition: 0.4s all ease-in-out;
+}
+
+// Preloader
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+// Navbar
+@keyframes stickyTransition {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+// Banner Top Shape
+@keyframes ripple1 {
+  0% {
+    transform: scale(5.5);
+    opacity: 0.3;
+  }
+
+  100% {
+    transform: scale(8.5);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple2 {
+  0% {
+    transform: scale(3.5);
+  }
+
+  100% {
+    transform: scale(5.5);
+  }
+}
+
+@keyframes ripple3 {
+  0% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(3.5);
+  }
+}
+
+// Banner Bottom Shape
+@keyframes moveImg {
+  0% {
+    background-position: 0;
+  }
+
+  100% {
+    background-position: 1360px;
+  }
+}
+
+@keyframes moveImgReverse {
+  0% {
+    background-position: 1360px;
+  }
+
+  100% {
+    background-position: 0;
+  }
+}

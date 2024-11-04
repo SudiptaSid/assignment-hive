@@ -1,0 +1,137 @@
+// Header
+.mainHeader {
+  background-color: clr(light, outline);
+  position: relative;
+
+  // Topbar
+  .topBar {
+    font-size: 12px;
+    background: linear-gradient(
+      90deg,
+      clr(primary, main) 0%,
+      clr(secondary, main) 100%
+    );
+    padding: 5px 0;
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      @include md {
+        gap: 5px;
+      }
+
+      a {
+        color: clr(light, main);
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  // Menubar
+  .navbar {
+    background-color: clr(light, outline);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding: 10px 0;
+
+    .navbar-brand {
+      padding: 0;
+
+      img {
+        height: 60px;
+      }
+    }
+
+    .navbar-toggler {
+      @include iconBox;
+      border-color: clr(light, main);
+      display: none;
+
+      @include md {
+        display: inline-flex;
+      }
+    }
+
+    .navbar-nav {
+      gap: 15px;
+
+      .nav-item {
+        .nav-link {
+          padding: 1em;
+          font-size: 1em;
+          font-weight: 500;
+          text-transform: capitalize;
+
+          &:hover,
+          &.active {
+            color: clr(primary, main);
+          }
+        }
+      }
+    }
+
+    &.sticky {
+      position: fixed;
+      animation-name: stickyTransition;
+      animation-duration: 0.5s;
+      animation-fill-mode: both;
+      box-shadow: 0 0 16px rgba(clr(black, main), 0.4);
+    }
+  }
+}
+
+// Responsive Navbar
+.mobileSidebar {
+  .offcanvas-header {
+    padding: 15px;
+    border-bottom: 1px solid clr(light, main);
+    gap: 5px;
+    align-items: center;
+
+    .logo {
+      display: inline-flex;
+
+      img {
+        height: 60px;
+      }
+    }
+
+    .closeBtn {
+      @include iconBox;
+      border-color: clr(light, main);
+      background-color: transparent;
+    }
+  }
+
+  .offcanvas-body {
+    padding: 20px 15px;
+
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .accordion-item {
+        .accordion-button {
+          padding: 0;
+          color: clr(black, main);
+
+          &:hover,
+          &:focus,
+          &.active {
+            color: clr(primary, main);
+          }
+        }
+      }
+    }
+  }
+}

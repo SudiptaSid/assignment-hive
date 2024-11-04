@@ -1,0 +1,25 @@
+// One
+.statsCardOne {
+  padding: 24px;
+  background-color: clr(secondary, outline);
+  border: 1px solid clr(light, main);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  img {
+    height: 50px;
+  }
+
+  .info {
+    h4 {
+      margin-bottom: 0;
+    }
+
+    p {
+      @include paraL;
+      margin-bottom: 0;
+    }
+  }
+}

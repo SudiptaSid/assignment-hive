@@ -1,0 +1,31 @@
+// Color
+$colors: (
+  primary: (
+    main: #db2492,
+    hover: #ca1f85,
+    focus: #be1b7d,
+    outline: #fbdeef,
+  ),
+  secondary: (
+    main: #326ac4,
+    hover: #2a58a1,
+    focus: #244c8b,
+    outline: #d5e5ff,
+  ),
+  black: (
+    main: #101010,
+    hover: #2b2540,
+    focus: #4b5265,
+    outline: #c9c9c9,
+  ),
+  light: (
+    main: #ebebf0,
+    hover: #eaeaea,
+    focus: #f0f0f0,
+    outline: #ffffff,
+  ),
+);
+
+@function clr($color, $value: main) {
+  @return map-get(map-get($colors, $color), $value);
+}

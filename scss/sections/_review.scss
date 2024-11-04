@@ -1,0 +1,16 @@
+// One
+.reviewOne {
+  padding: 80px 0;
+
+  .reviewSliderOne {
+    .slick-arrow {
+      @include slickArrowOne;
+    }
+
+    .reviewCardOne {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+}

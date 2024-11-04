@@ -1,0 +1,65 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Font Awesome */
+@import "../vendors/fontawesome/scss/fontawesome";
+@import "../vendors/fontawesome/scss/solid";
+@import "../vendors/fontawesome/scss/brands";
+@import "../vendors/fontawesome/scss/regular";
+
+/* Line Icons */
+@import "../vendors/lineicons/icons.scss";
+
+/* Bootstrap */
+@import "../vendors/bootstrap/scss/bootstrap";
+
+/* Slick Slider */
+@import "../vendors/slickslider/slick";
+@import "../vendors/slickslider/slick-theme";
+
+/* Mixin */
+@import "mixin/color";
+@import "mixin/breakpoint";
+@import "mixin/font";
+@import "mixin/keyframe";
+@import "mixin/others";
+
+/* Base */
+@import "reset";
+
+/* Components */
+@import "components/form/buttons";
+@import "components/form/input";
+@import "components/form/checkbox";
+@import "components/form/radio";
+@import "components/form/toggle";
+@import "components/form/upload";
+
+@import "components/loader";
+@import "components/backToTop";
+@import "components/heading";
+@import "components/accordian";
+@import "components/breadcrumb";
+@import "components/dropdown";
+@import "components/modal";
+@import "components/pagination";
+@import "components/table";
+@import "components/others";
+
+@import "components/cards/stats";
+@import "components/cards/review";
+
+/* Layout */
+@import "layout/header";
+@import "layout/footer";
+
+/* Plugin Edits */
+@import "plugins/bootstrap";
+@import "plugins/slickSlider";
+
+/* Section */
+@import "sections/heroBanner";
+@import "sections/about";
+@import "sections/service";
+@import "sections/review";
+@import "sections/contact";
